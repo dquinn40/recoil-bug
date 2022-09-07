@@ -1,0 +1,33 @@
+{
+  "name": "recoil-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dquinn40/recoil-bug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dquinn40/recoil-bug/issues"
+  },
+  "homepage": "https://github.com/dquinn40/recoil-bug#readme",
+  "dependencies": {
+    "babel-jest": "^29.0.2",
+    "jest": "^28.0.0",
+    "jest-environment-jsdom": "^29.0.2",
+    "react": "^18.2.0",
+    "recoil": "^0.7.5",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.0.0"
+  }
+}
