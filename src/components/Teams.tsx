@@ -10,14 +10,11 @@ const Teams: React.FC<unknown> = () => {
         maybeTeams.getValue() :
         []
 
-
     const teamItems = teams.map(team => <li key={team.name}>
-        <span data-testid={`${team.name}-name`}>{team.name}</span> -
-        <span data-testid={`${team.name}-sport`}>{team.sport}</span> -
-        <span data-testid={`${team.name}-founded`}>{team.founded}</span> -
-        <span data-testid={`${team.name}-currentEnvironment`}>{team.currentEnvironment}</span> -
+        {team.name}
     </li>)
-    return <ul>{teamItems}</ul>;
+
+    return <ul data-testid='teamsList'>{teamItems}</ul>;
 };
 
 export default Teams;

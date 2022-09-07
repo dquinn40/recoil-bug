@@ -1,3 +1,5 @@
+import {Sport} from "./Sport";
+
 export interface AppContext {
-    environment: 'dev' | 'qa' | 'production'
+    selectedSport: Sport
 }

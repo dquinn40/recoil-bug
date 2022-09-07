@@ -10,11 +10,10 @@ describe('getLoadable', () => {
             </RecoilRoot>
         );
 
-        const name = screen.getByTestId('Cavaliers-name');
-        expect(name.textContent).toEqual('Cavaliers');
+        const soccerTeamListItem = screen.queryByText('Manchester United');
+        expect(soccerTeamListItem).toBeDefined()
 
-        const currentEnvironment = screen.getByTestId('Cavaliers-currentEnvironment');
-        expect(currentEnvironment).toBeDefined();
-        expect(currentEnvironment.textContent).toEqual('dev');
+        const cavaliersItem = screen.queryByText('Cavaliers');
+        expect(cavaliersItem).not.toBeDefined()
     })
 })

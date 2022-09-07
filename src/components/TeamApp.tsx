@@ -9,7 +9,7 @@ const TeamApp: React.FC = () => {
 
     useEffect(() => {
         setAppContext({
-            environment: 'dev'
+            selectedSport: 'soccer'
         })
     }, [setAppContext]);
 
